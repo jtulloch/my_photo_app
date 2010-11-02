@@ -1,0 +1,19 @@
+!!!
+%html
+  %head
+    %title make a prediction
+  %body
+    %h1 make a prediction
+    %form{ :action => "/prediction", :method => "post"}
+      %fieldset
+        %ol
+          %li
+            %label{:for => "first_name"} First Name:
+            %input{:type => "text", :name => "first_name", :class => "text"}
+          %li
+            %label{:for => "email"} email:
+            %input{:type => "text", :name => "email", :class => "text"}
+          %li
+            %label{:for => "body"} Message:
+            %textarea{:name => "body"}
+        %input{:type => "submit", :value => "Send", :class => "button"}

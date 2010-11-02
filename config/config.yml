@@ -1,0 +1,14 @@
+---
+environment: production
+chdir: /home/joel/public_html/photo_app/
+address: 127.0.0.1
+user: joel
+group: joel
+port: 4569
+pid: /home/joel/public_html/photo_app/tmp/thin.pid
+rackup: /home/joel/public_html/photo_app/config/rackup.ru
+log: /home/joel/public_html/photo_app/logs/thin.log
+max_conns: 1024
+timeout: 30
+max_persistent_conns: 512
+daemonize: true
