@@ -141,7 +141,7 @@ photo_app.photoCollection = (function() {
         var returnArray = _photos.slice(offset,secondIndex);
 
         if( offset === _offset ) {
-          _offset = ( _photos.length > secondIndex ) ? secondIndex + 1 : _photos.length;
+          _offset = ( _photos.length > secondIndex ) ? secondIndex : _photos.length;
         }
 
         return returnArray;
